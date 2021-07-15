@@ -14,15 +14,31 @@ if opcion == "suma"
 elsif opcion == "resta"
     puts "??"
 
-elsif opcion == pares
+elsif opcion == "pares"
+    for i in numeros
+        if i.even? == true
+            puts i
+        end
+    end
+
+elsif opcion == "impares"
+    for i in numeros
+        if i.odd? == true
+            puts i
+        end
+    end
+
+
+
+elsif opcion == "mayor"
     
+    numeros_ordenados = numeros.sort
+    puts numeros_ordenados[-1]
 
-elsif opcion == impares
-
-elsif opcion == mayor
-
-elsif opcion == menor
-
+elsif opcion == "menor"
+    numeros_ordenados = numeros.sort
+    puts numeros_ordenados[0]
+    
 else puts "opcion invalida"
     
 
